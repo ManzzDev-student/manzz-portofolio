@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manzz | Backend & Logic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode" id="main-body">
+
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">🌙</button>
+
+    <!-- RANDOM ANOMALY BUTTONS (Misterious Interactive) -->
+    <button class="anomaly-btn" style="top: 15%; left: 5%;" data-msg="Sistem terganggu...">[ ? ]</button>
+    <button class="anomaly-btn" style="bottom: 25%; right: 2%;" data-msg="Memori bocor...">∆</button>
+    <button class="anomaly-btn" style="top: 50%; left: -10px; transform: rotate(90deg);" data-msg="Menyuntikkan payload...">_X_</button>
+
+    <!-- Fullscreen Glitch Overlay -->
+    <div id="glitch-overlay" class="glitch-screen"></div>
+
+    <main class="container">
+        
+        <!-- Header -->
+        <header class="profile-header">
+            <h1 class="logo">Manzz<span class="dot">.</span></h1>
+            <p class="subtitle">Logika di Balik Layar — 2026</p>
+            <div class="status-badge">
+                <span class="status-dot"></span> Core Logic & Backend Enthusiast
+            </div>
+        </header>
+
+        <hr class="divider">
+
+        <!-- About Section (Info Biasa yang Elegan & Berkotak) -->
+        <section class="section fade-in">
+            <h2 class="section-title">01. Abstraksi Profil</h2>
+            
+            <div class="info-block-container">
+                <!-- Kotak 1: Identitas & Hobi -->
+                <div class="info-card">
+                    <h3>Identitas & Fokus Utama</h3>
+                    <p>Halo, panggil aja gua <span class="highlight">Manzz</span>. Singkatnya, gua seorang pelajar yang harus pinter-pinter ngebagi waktu antara tugas sekolah di siang hari dan troubleshooting sirkuit kode di malam hari. Saat ini fokus belajar gua lagi didominasi penuh oleh ekosistem <span class="highlight">JavaScript</span>, optimasi Node.js, dan otomatisasi skrip.</p>
+                </div>
+
+                <!-- Kotak 2: Kenapa Pilih Backend -->
+                <div class="info-card">
+                    <h3>Filosofi Arsitektur Backend</h3>
+                    <p>Bukannya gua anti atau benci sama *frontend* (desain visual web), tapi jujur aja, memikirkan logika rumit di balik layar, mengelola basis data, dan ngakalin *error* di server itu ngasih kepuasan tersendiri buat gua. Menatap baris kode yang bersih dan terstruktur jauh lebih menarik dibanding meributkan warna pixel atau tata letak tombol.</p>
+                </div>
+
+                <!-- Kotak 3: Metode Belajar -->
+                <div class="info-card">
+                    <h3>Eksperimen Pragmatis</h3>
+                    <p>Gua tipe orang yang belajar lewat aksi langsung (otodidak), bukan sekadar menghafal isi buku teks yang kaku. Bagi gua, menemukan solusi tak terduga (*accidental genius*) lewat kegagalan dan *runtime error* berkali-kali adalah metode terbaik untuk benar-benar memahami bagaimana sebuah sistem bekerja secara utuh.</p>
+                </div>
+
+                <!-- Kotak 4: Ambisi Sistem -->
+                <div class="info-card">
+                    <h3>Visi Otomatisasi</h3>
+                    <p>Mimpi terbesar gua adalah bisa ngebangun berbagai sistem digital cerdas yang mampu berjalan otomatis secara mandiri tanpa perlu terlalu banyak intervensi dari manusia. Efisiensi, kecepatan eksekusi logika, dan ketahanan sirkuit kode adalah prioritas utama gua dalam setiap proyek.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Mysterious Vault -->
+        <section class="section fade-in">
+            <h2 class="section-title">02. [CLASSIFIED] Overclocked Log</h2>
+            <p class="hint-text">Klik baris enkripsi di bawah untuk membongkar log sistem:</p>
+            
+            <div class="vault-container">
+                <div class="vault-item">
+                    <div class="vault-trigger" data-target="log-1">
+                        <span class="vault-status">[ENCRYPTED]</span> <code>sys_persona.log</code>
+                    </div>
+                    <div class="vault-content" id="log-1">
+                        <div class="vault-inner">
+                            <h4>Prinsip Dasar Programmer</h4>
+                            <p>Error adalah teman. Semakin sering kodenya hancur, semakin dalam kita memahami arsitekturnya. Jangan pernah takut sama bug, takutlah kalau kodenya jalan tapi kita gak tau kenapa bisa jalan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vault-item">
+                    <div class="vault-trigger" data-target="log-2">
+                        <span class="vault-status">[ENCRYPTED]</span> <code>core_driver.log</code>
+                    </div>
+                    <div class="vault-content" id="log-2">
+                        <div class="vault-inner">
+                            <h4>Spesifikasi Karakter</h4>
+                            <p>Punya imajinasi logika yang kuat, kebal terhadap kepanikan saat sistem *crash*, dan punya kebiasaan merancang *pipeline automation* lokal buat mempermudah pekerjaan berulang.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyek Section -->
+        <section class="section fade-in">
+            <h2 class="section-title">03. Arsitektur Proyek</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Mini CI/CD Pipeline Automation</h3>
+                    <p>Skrip otomatisasi buat sinkronisasi kode dari server lokal langsung ke *repository* tanpa ribet, lengkap dengan auto-build Next.js.</p>
+                    <span class="tech-tag">Node.js</span> <span class="tech-tag">Automation</span>
+                </div>
+                <div class="project-card">
+                    <h3>Prototype Injector</h3>
+                    <p>Metaprogramming JS tingkat lanjut untuk memodifikasi objek bawaan tanpa merusak *enumerable properties* secara ilegal.</p>
+                    <span class="tech-tag">JavaScript</span> <span class="tech-tag">Core Logic</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Runner Code (Sekadar Playground - Bottom Side) -->
+        <section class="section fade-in">
+            <h2 class="section-title">04. Raw Playground (Eval)</h2>
+            <p class="hint-text">Ruang isolasi buat eksekusi JS mentah. 100% *Client-side*. Risiko ditanggung *browser* lu sendiri.</p>
+            
+            <div class="playground-box">
+                <div class="pg-header">
+                    <span class="pg-title">root@manzz:~/sandbox#</span>
+                </div>
+                <textarea id="playground-input" spellcheck="false">let name = "Manzz";
+let skill = "Backend";
+`Sistem siap: ${name} - ${skill}`;</textarea>
+                
+                <div class="pg-footer">
+                    <button id="btn-run-code" class="run-btn">Execute</button>
+                    <button id="btn-clear-pg" class="clear-btn">Clear</button>
+                </div>
+                <div class="pg-console-output">
+                    <pre id="playground-output">Menunggu instruksi...</pre>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- Footer & EASTER EGG REPO -->
+        <footer class="profile-footer">
+            <p>&copy; 2026 Manzz. Dibangun dengan keringat, logika, dan sedikit *error*.</p>
+            
+            <div class="repo-easter-egg">
+                <a href="https://github.com/ManzzDev-Student/manzz-portofolio" target="_blank" class="repo-cmd">
+                    <span class="cmd-prompt">~ $</span> git clone manzz-portofolio 
+                    <span class="blinking-cursor">_</span>
+                </a>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
